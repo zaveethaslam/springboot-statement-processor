@@ -24,21 +24,21 @@ public class ResponseBuilderService {
 		return buildResponseCode(validator.validateRequest(records));
 	}
 
-	private List<ErrorRecord> buildErrorRecords(List<CustomerRecord> list) {
+	public List<ErrorRecord> buildErrorRecords(List<CustomerRecord> list) {
 		Set<Long> referenceSet = new HashSet<>();
 		return list.stream().filter(record -> referenceSet.add(record.getReference()))
 				.map(record -> new ErrorRecord(record.getReference(), record.getAccountNumber()))
 				.collect(Collectors.toList());
 	}
 
-	private List<ErrorRecord> buildErrorRecordsForBothErrors(List<List<CustomerRecord>> validatedRecords) {
+	public List<ErrorRecord> buildErrorRecordsForBothErrors(List<List<CustomerRecord>> validatedRecords) {
 		Set<Long> referenceSet = new HashSet<>();
 		return validatedRecords.stream().flatMap(List::stream).filter(record -> referenceSet.add(record.getReference()))
 				.map(record -> new ErrorRecord(record.getReference(), record.getAccountNumber()))
 				.collect(Collectors.toList());
 	}
 
-	private ResponseMessage buildResponseCode(List<List<CustomerRecord>> validatedRecords) {
+	public ResponseMessage buildResponseCode(List<List<CustomerRecord>> validatedRecords) {
 		if (validatedRecords.get(0).size() == 0 && validatedRecords.get(1).size() == 0) {
 			return ResponseMessage.builder().result("SUCCESSFUL").build();
 		} else if (validatedRecords.get(0).size() != 0 && validatedRecords.get(1).size() == 0) {
