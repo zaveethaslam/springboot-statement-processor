@@ -21,6 +21,6 @@ public class ResponseMessage {
 	private String result ="SUCCESSFUL";
 
 	@Builder.Default
-	private List<ErrorRecords> errorRecords = new ArrayList<ErrorRecords>();
+	private List<ErrorRecord> errorRecords = new ArrayList<ErrorRecord>();
 
 }

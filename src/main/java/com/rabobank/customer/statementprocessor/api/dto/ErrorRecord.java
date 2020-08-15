@@ -5,22 +5,15 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-@Getter 
+@Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class CustomerRecord {
 
-	private Long reference;
+public class ErrorRecord {
+
+	private Long referenceNumber;
 
 	private String accountNumber;
-
-	private Double startBalance;
-
-	private String mutation;
-
-	private String description;
-
-	private Double endBalance;
 
 }
