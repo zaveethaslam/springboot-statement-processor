@@ -20,6 +20,6 @@ public class StatementProcessorApplication {
 	  
 	  @Override public void addCorsMappings(CorsRegistry registry) {
 	  registry.addMapping("/process").allowedOrigins(
-	  "http://localhost:4200"); } }; }
+	  "https://rbuistatement.herokuapp.com/"); } }; }
 	
 }
