@@ -19,7 +19,7 @@ public class StatementProcessorApplication {
 	  WebMvcConfigurerAdapter() {
 	  
 	  @Override public void addCorsMappings(CorsRegistry registry) {
-	  registry.addMapping("/process").allowedOrigins(
-	  "https://rbuistatement.herokuapp.com/"); } }; }
+	  registry.addMapping("**/**").allowedOrigins(
+	  "https://rbuistatement.herokuapp.com"); } }; }
 	
 }
