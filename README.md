@@ -1,9 +1,9 @@
 This repository is a demonstration of how spring boot works with angular UI. This consist of two parts, one for backend connectivity and another for frontend. 
 The service is deployed in Heroku for demonstration purposes. 
 
->UI - https://rbuistatement.herokuapp.com/
+>UI - https://rbuistatement.herokuapp.com/  [repository: angular_statement_process]
 
->Backend - https://rbbstatement.herokuapp.com/ 
+>Backend - https://rbbstatement.herokuapp.com/ [repository : springboot-statement-processor]
 
 Note: This is deployed only for demonstration purposes. Hit the URL for the first time and wait for 30 seconds to bring up the service. Also, check for https://rbbstatement.herokuapp.com/actuator/health to verify whether service is up or not. 
 
