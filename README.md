@@ -1,9 +1,9 @@
 This repository is a demonstration of how spring boot works with angular UI. This consist of two parts, one for backend connectivity and another for frontend. 
 The service is deployed in Heroku for demonstration purposes. 
 
-+ACM-UI - https://rbuistatement.herokuapp.com/
+*UI - https://rbuistatement.herokuapp.com/
 
-+ACM-Backend - https://rbbstatement.herokuapp.com/ 
+*Backend - https://rbbstatement.herokuapp.com/ 
 
 Note: This is deployed only for demonstration purposes. Hit the URL for the first time and wait for 30 seconds to bring up the service. 
 
@@ -18,11 +18,12 @@ How the application works +ACEAIQAh-
 1. Open https://rbuistatement.herokuapp.com/. It lands you in the homepage, where you will be preset of values for testing 6 scenarions. 
 	- Data for normal scneario, where you get SUCCESSFUL in the response
 	- Data for Duplicate Records, Unbalance Data, Bad Request and Internal Service Errors. 
-	- These data will be loaded on the screen upon clicking individual buttons. 
+	- The data will be loaded on the screen upon clicking individual buttons. 
 
-
+![HomePage](/readme-documentation/0.PNG)
 
 2. Click Generate Data for Successful Button on the screen and the data will be loaded on the screen. Now, click Process entries button. 
-
+![HomePage](/readme-documentation/1.1.PNG)
 
 3. After clicking Process entries, data will be loaded in the response area. 
+![HomePage](/readme-documentation/1.2.PNG)
